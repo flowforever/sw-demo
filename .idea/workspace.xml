@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c14e34b-0770-4ac5-bfd0-cf99ef9f2a3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pageA/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pageA/sw-pageA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/api/appInfoRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sw.js" afterDir="false" />
     </list>
@@ -23,39 +22,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <state relative-caret-position="108">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
               <folding>
-                <element signature="e#123#753#0" />
-                <element signature="e#177#745#0" />
-                <element signature="e#272#602#0" />
-                <element signature="e#388#584#0" />
-                <element signature="e#468#560#0" />
-                <element signature="e#636#733#0" />
-                <element signature="e#1706#1930#0" />
-                <element signature="e#1773#1856#0" />
+                <element signature="e#643#740#0" />
+                <element signature="e#805#2082#0" />
+                <element signature="e#859#1296#0" />
+                <element signature="e#1185#1255#0" />
+                <element signature="e#1425#1538#0" />
+                <element signature="e#1582#1953#0" />
+                <element signature="e#1713#1937#0" />
+                <element signature="e#1780#1863#0" />
+                <element signature="e#1989#2072#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="216">
+              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
               <folding>
                 <element signature="e#54#159#0" />
-                <element signature="e#724#800#0" />
-                <element signature="e#825#1044#0" />
-                <element signature="e#934#1001#0" />
-                <element signature="e#1074#1193#0" />
-                <element signature="e#1112#1179#0" />
-                <element signature="e#1470#1483#0" />
+                <element signature="e#246#412#0" />
+                <element signature="e#819#895#0" />
+                <element signature="e#920#1139#0" />
+                <element signature="e#1029#1096#0" />
+                <element signature="e#1169#1288#0" />
+                <element signature="e#1207#1274#0" />
+                <element signature="e#1340#1718#0" />
+                <element signature="e#1567#1580#0" />
+                <element signature="n#!!block;n#fallbackIndexHtml#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -76,6 +88,7 @@
       <find>fcm</find>
       <find>googleapi</find>
       <find>console.lo</find>
+      <find>confirm</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -87,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/sw2.js" />
         <option value="$PROJECT_DIR$/server/genKey.js" />
         <option value="$PROJECT_DIR$/pushkey.json" />
         <option value="$PROJECT_DIR$/src/pushkey.json" />
@@ -97,12 +109,13 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$USER_HOME$/.ShadowsocksX/gfwlist.js" />
         <option value="$PROJECT_DIR$/server/api/subscribeRoute.js" />
-        <option value="$PROJECT_DIR$/server/app.js" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/pageA/index.html" />
         <option value="$PROJECT_DIR$/src/pageA/sw-pageA.js" />
-        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/server/api/appInfoRoute.js" />
+        <option value="$PROJECT_DIR$/server/app.js" />
         <option value="$PROJECT_DIR$/src/sw.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/main.js" />
       </list>
     </option>
   </component>
@@ -300,18 +313,18 @@
       <option name="presentableId" value="Default" />
       <updated>1552103536589</updated>
       <workItem from="1552103538116" duration="9490000" />
-      <workItem from="1552193705229" duration="9479000" />
+      <workItem from="1552193705229" duration="12192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18969000" />
+    <option name="totallyTimeSpent" value="21682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Storybook" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -331,18 +344,32 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Storybook" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4223684" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="RNConsole" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.49473685" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nodemon.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -384,20 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/subscribeRoute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/web-push/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -419,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pageA/sw-pageA.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -440,35 +446,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
+    <entry file="file://$PROJECT_DIR$/server/api/appInfoRoute.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="e#123#753#0" />
-            <element signature="e#177#745#0" />
-            <element signature="e#272#602#0" />
-            <element signature="e#388#584#0" />
-            <element signature="e#468#560#0" />
-            <element signature="e#636#733#0" />
-            <element signature="e#1706#1930#0" />
-            <element signature="e#1773#1856#0" />
-          </folding>
+        <state relative-caret-position="54">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/subscribeRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="216">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
           <folding>
             <element signature="e#54#159#0" />
-            <element signature="e#724#800#0" />
-            <element signature="e#825#1044#0" />
-            <element signature="e#934#1001#0" />
-            <element signature="e#1074#1193#0" />
-            <element signature="e#1112#1179#0" />
-            <element signature="e#1470#1483#0" />
+            <element signature="e#246#412#0" />
+            <element signature="e#819#895#0" />
+            <element signature="e#920#1139#0" />
+            <element signature="e#1029#1096#0" />
+            <element signature="e#1169#1288#0" />
+            <element signature="e#1207#1274#0" />
+            <element signature="e#1340#1718#0" />
+            <element signature="e#1567#1580#0" />
+            <element signature="n#!!block;n#fallbackIndexHtml#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <element signature="e#643#740#0" />
+            <element signature="e#805#2082#0" />
+            <element signature="e#859#1296#0" />
+            <element signature="e#1185#1255#0" />
+            <element signature="e#1425#1538#0" />
+            <element signature="e#1582#1953#0" />
+            <element signature="e#1713#1937#0" />
+            <element signature="e#1780#1863#0" />
+            <element signature="e#1989#2072#0" />
           </folding>
         </state>
       </provider>

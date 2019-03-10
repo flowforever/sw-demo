@@ -5,6 +5,7 @@ const koaBodyParser = require('koa-bodyparser');
 const koaSession = require('koa-session');
 
 const {subscribeRoute} = require("./api/subscribeRoute");
+const {appInfoRoute} = require("./api/appInfoRoute");
 
 
 const app = new Koa();
@@ -33,6 +34,7 @@ app.use(koaBodyParser());
 app.use(koaSession(sessionConfig, app));
 
 app.use(subscribeRoute.routes());
+app.use(appInfoRoute.routes());
 
 app.listen(PORT);
 console.log('App listen on', PORT);

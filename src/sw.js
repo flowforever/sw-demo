@@ -1,4 +1,4 @@
-const cacheName = 'main-3.0.0';
+const cacheName = 'main-6.0.0';
 
 const preCacheList = [
     '/',
@@ -12,8 +12,6 @@ const preCacheList = [
     '/images/offline-support.png'
 ];
 
-console.log('Running Service Worker.')
-
 self.addEventListener('install', (event) => {
     console.log(`[Service Worker] install`);
 
@@ -25,7 +23,8 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', async () => {
-    console.log('[Service Worker] active')
+    console.log('[Service Worker] active');
+    clients.claim();
 });
 
 self.addEventListener('fetch', (event) => {

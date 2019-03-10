@@ -4,16 +4,7 @@
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
             navigator.serviceWorker.register('/sw.js')
-                .then(registration => {
-
-                    subscribeUser(registration);
-
-                    if (Notification.permission === 'granted') {
-                        navigator.serviceWorker.getRegistration().then(reg => {
-                            reg.showNotification('Local Push Service');
-                        });
-                    }
-                })
+                .then(subscribeUser)
                 .catch(error => {
                     console.error('Installing Service Worker Failed', error);
                 });
@@ -54,6 +45,6 @@
                 console.log('Failed to subscribe the user: ', err);
             });
 
-
+        return swRegistration;
     }
 })();
