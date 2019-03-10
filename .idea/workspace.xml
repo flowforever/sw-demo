@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c14e34b-0770-4ac5-bfd0-cf99ef9f2a3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/api/appInfoRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/appInfoRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/appInfoRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sw.js" afterDir="false" />
     </list>
@@ -22,13 +22,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            <state relative-caret-position="176">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="e#643#740#0" />
+                <element signature="e#548#607#0" />
                 <element signature="e#805#2082#0" />
                 <element signature="e#859#1296#0" />
                 <element signature="e#1185#1255#0" />
@@ -37,7 +38,17 @@
                 <element signature="e#1713#1937#0" />
                 <element signature="e#1780#1863#0" />
                 <element signature="e#1989#2072#0" />
+                <element signature="e#1839#1899#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/api/appInfoRoute.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -45,17 +56,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="284">
+              <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
               <folding>
                 <element signature="e#54#159#0" />
                 <element signature="e#246#412#0" />
+                <element signature="e#462#530#0" />
+                <element signature="e#576#1297#0" />
+                <element signature="e#590#606#0" />
+                <element signature="e#624#648#0" />
+                <element signature="e#657#702#0" />
                 <element signature="e#819#895#0" />
                 <element signature="e#920#1139#0" />
                 <element signature="e#1029#1096#0" />
                 <element signature="e#1169#1288#0" />
                 <element signature="e#1207#1274#0" />
-                <element signature="e#1340#1718#0" />
                 <element signature="e#1567#1580#0" />
                 <element signature="n#!!block;n#fallbackIndexHtml#0" />
               </folding>
@@ -66,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+            <state relative-caret-position="284">
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -111,11 +126,11 @@
         <option value="$PROJECT_DIR$/server/api/subscribeRoute.js" />
         <option value="$PROJECT_DIR$/src/pageA/index.html" />
         <option value="$PROJECT_DIR$/src/pageA/sw-pageA.js" />
-        <option value="$PROJECT_DIR$/server/api/appInfoRoute.js" />
         <option value="$PROJECT_DIR$/server/app.js" />
-        <option value="$PROJECT_DIR$/src/sw.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/sw.js" />
+        <option value="$PROJECT_DIR$/server/api/appInfoRoute.js" />
       </list>
     </option>
   </component>
@@ -146,7 +161,13 @@
             <path>
               <item name="sw-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="sw-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sw-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sw-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -313,24 +334,32 @@
       <option name="presentableId" value="Default" />
       <updated>1552103536589</updated>
       <workItem from="1552103538116" duration="9490000" />
-      <workItem from="1552193705229" duration="12192000" />
+      <workItem from="1552193705229" duration="16252000" />
     </task>
+    <task id="LOCAL-00001" summary="1. expose app info">
+      <created>1552232304427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552232304427</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21682000" />
+    <option name="totallyTimeSpent" value="25742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Storybook" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4223684" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4223684" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -368,6 +397,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1. expose app info" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. expose app info" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -446,13 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/appInfoRoute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -469,36 +495,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="e#54#159#0" />
-            <element signature="e#246#412#0" />
-            <element signature="e#819#895#0" />
-            <element signature="e#920#1139#0" />
-            <element signature="e#1029#1096#0" />
-            <element signature="e#1169#1288#0" />
-            <element signature="e#1207#1274#0" />
-            <element signature="e#1340#1718#0" />
-            <element signature="e#1567#1580#0" />
-            <element signature="n#!!block;n#fallbackIndexHtml#0" />
-          </folding>
+        <state relative-caret-position="284">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        <state relative-caret-position="176">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="e#643#740#0" />
+            <element signature="e#548#607#0" />
             <element signature="e#805#2082#0" />
             <element signature="e#859#1296#0" />
             <element signature="e#1185#1255#0" />
@@ -507,7 +515,38 @@
             <element signature="e#1713#1937#0" />
             <element signature="e#1780#1863#0" />
             <element signature="e#1989#2072#0" />
+            <element signature="e#1839#1899#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
+          <folding>
+            <element signature="e#54#159#0" />
+            <element signature="e#246#412#0" />
+            <element signature="e#462#530#0" />
+            <element signature="e#576#1297#0" />
+            <element signature="e#590#606#0" />
+            <element signature="e#624#648#0" />
+            <element signature="e#657#702#0" />
+            <element signature="e#819#895#0" />
+            <element signature="e#920#1139#0" />
+            <element signature="e#1029#1096#0" />
+            <element signature="e#1169#1288#0" />
+            <element signature="e#1207#1274#0" />
+            <element signature="e#1567#1580#0" />
+            <element signature="n#!!block;n#fallbackIndexHtml#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/appInfoRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
         </state>
       </provider>
     </entry>

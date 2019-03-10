@@ -10,3 +10,8 @@ appInfoRoute.get('/', ctx => {
         version: package.version,
     };
 });
+
+
+appInfoRoute.get('/sync', ctx=>{
+    ctx.body = 'sync success';
+});

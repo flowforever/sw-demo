@@ -1,4 +1,4 @@
-const cacheName = 'main-6.0.0';
+const cacheName = 'main-9.1.0';
 
 const preCacheList = [
     '/',
@@ -24,10 +24,20 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('activate', async () => {
     console.log('[Service Worker] active');
-    clients.claim();
+    self.clients.claim();
 });
 
 self.addEventListener('fetch', (event) => {
+
+    self.clients.matchAll().then(clients => {
+        clients.forEach(client => {
+            client.postMessage({
+                type: 'fetch',
+                url: event.request.url,
+            });
+        })
+    })
+
     const {request} = event;
     const {mode} = request;
     const isNavigateMode = mode === 'navigate';
@@ -65,6 +75,15 @@ self.addEventListener('push', event => {
     //util.postMessage(notificationData);
     // 弹消息框
     event.waitUntil(self.registration.showNotification(title, notificationData));
+});
+
+self.addEventListener('sync', (event) => {
+    const {tag} = event;
+    if(tag === 'unload') {
+        event.waitUntil(
+            fetch('/api/app-info/sync?userId=trump.wang')
+        )
+    }
 });
 
 

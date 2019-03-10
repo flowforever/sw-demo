@@ -3,11 +3,18 @@
 
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
+
             navigator.serviceWorker.register('/sw.js')
                 .then(subscribeUser)
                 .catch(error => {
                     console.error('Installing Service Worker Failed', error);
                 });
+
+            document.getElementById('syncBtn').addEventListener('click', () => {
+                navigator.serviceWorker.ready.then(reg => {
+                    return reg.sync.register('unload');
+                })
+            })
         });
     }
 
@@ -32,7 +39,7 @@
                 applicationServerKey: applicationServerKey
             })
             .then(function (subscription) {
-                console.log('User is subscribed:', JSON.stringify(subscription));
+                console.log('POST EndPoint Info to Server:', JSON.stringify(subscription));
                 return fetch('/api/subscribe', {
                     method: 'post',
                     headers: {
@@ -47,4 +54,9 @@
 
         return swRegistration;
     }
+
+    navigator.serviceWorker.addEventListener('message', event => {
+        //console.log('Service Worker Message', event);
+    });
+
 })();
