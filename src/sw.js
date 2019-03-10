@@ -1,4 +1,4 @@
-const version = '2.0.0';
+const version = '3.0.0';
 
 const preCacheList = [
     '/',
@@ -36,7 +36,7 @@ self.addEventListener('fetch', (event) => {
                 return response ? response : fetch(request);
             })
             .then(res=>{
-                console.log('Fetch res',res);
+                //console.log('Fetch res',res);
 
                 if (res.status === 404 && isNavigateMode) {
                     return fallbackIndexHtml();
@@ -50,6 +50,18 @@ self.addEventListener('fetch', (event) => {
                 }
             })
     )
+});
+
+self.addEventListener('push', event=>{
+    console.log('[Service Worker] Push Received.');
+    console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
+
+    let notificationData = event.data.json();
+    const title = notificationData.title;
+    // 可以发个消息通知页面
+    //util.postMessage(notificationData);
+    // 弹消息框
+    event.waitUntil(self.registration.showNotification(title, notificationData));
 });
 
 
