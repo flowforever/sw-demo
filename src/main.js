@@ -10,7 +10,7 @@
 
                     if (Notification.permission === 'granted') {
                         navigator.serviceWorker.getRegistration().then(reg => {
-                            reg.showNotification('Hello World');
+                            reg.showNotification('Local Push Service');
                         });
                     }
                 })

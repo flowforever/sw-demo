@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <title>Service Worker Demo Page A</title>
+    <link href="/css/app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div>
+    <h1>Page A</h1>
+
+    <p>
+      Offline Support
+    </p>
+    <img alt="Offline Support" src="/images/offline-support.png" />
+
+    <br/>
+
+    <p>Online Only</p>
+    <img alt="You are off line" src="/images/online-only.png" />
+
+</div>
+
+<script>
+    (async () => {
+        const {appConfig: {publicKey}} = await import('../appConfig.js');
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/pageA/sw-pageA.js')
+                    .catch(error => {
+                        console.error('Installing Service Worker Failed', error);
+                    });
+            });
+        }
+
+    })();
+</script>
+
+
+</body>
+
+</html>
