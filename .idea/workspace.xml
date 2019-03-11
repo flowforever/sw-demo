@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c14e34b-0770-4ac5-bfd0-cf99ef9f2a3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/versionConfig.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/appInfoRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/appInfoRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pageA/sw-pageA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pageA/sw-pageA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+            <state relative-caret-position="144">
+              <caret line="81" column="3" lean-forward="true" selection-start-line="81" selection-start-column="3" selection-end-line="81" selection-end-column="3" />
               <folding>
                 <element signature="e#49#154#0" />
                 <element signature="e#201#372#0" />
@@ -75,6 +70,18 @@
                 <element signature="e#2503#2603#0" />
                 <element signature="n#!!block;n#fallbackIndexHtml#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="306">
+                <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -129,12 +136,12 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pushkey.json" />
         <option value="$PROJECT_DIR$/src/pushkey.json" />
         <option value="$PROJECT_DIR$/src/appConfig.js" />
         <option value="$PROJECT_DIR$/server/api/subscribe.js" />
@@ -150,6 +157,7 @@
         <option value="$PROJECT_DIR$/src/versionConfig.js" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/sw.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -176,11 +184,6 @@
             <path>
               <item name="sw-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="sw-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sw-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sw-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -348,7 +351,7 @@
       <updated>1552103536589</updated>
       <workItem from="1552103538116" duration="9490000" />
       <workItem from="1552193705229" duration="18090000" />
-      <workItem from="1552258456441" duration="3485000" />
+      <workItem from="1552258456441" duration="3882000" />
     </task>
     <task id="LOCAL-00001" summary="1. expose app info">
       <created>1552232304427</created>
@@ -364,17 +367,24 @@
       <option name="project" value="LOCAL" />
       <updated>1552236643375</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1. add update example">
+      <created>1552267637786</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552267637786</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31065000" />
+    <option name="totallyTimeSpent" value="31462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Storybook" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -422,16 +432,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1. expose app info" />
     <MESSAGE value="1. add sync example" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. add sync example" />
+    <MESSAGE value="1. add update example" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. add update example" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/genKey.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.ShadowsocksX/gfwlist.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -554,8 +558,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+        <state relative-caret-position="144">
+          <caret line="81" column="3" lean-forward="true" selection-start-line="81" selection-start-column="3" selection-end-line="81" selection-end-column="3" />
           <folding>
             <element signature="e#49#154#0" />
             <element signature="e#201#372#0" />
@@ -577,6 +581,16 @@
             <element signature="e#2503#2603#0" />
             <element signature="n#!!block;n#fallbackIndexHtml#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
