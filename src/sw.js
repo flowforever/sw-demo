@@ -16,7 +16,8 @@ self.addEventListener('install', (event) => {
     console.log(`[Service Worker] install ${cacheVersionName}`);
     self.skipWaiting(); // 立即使用用该版本接管 fetch push sync 等
 
-    //
+    self.clients.claim();
+
     event.waitUntil(
         caches.open(cacheVersionName)
             .then(cache => cache.addAll(preCacheList))
@@ -26,6 +27,7 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('activate', async () => {
     console.log('[Service Worker] active');
+
     event.waitUntil(
         caches.keys().then(function (cacheNames) {
             return Promise.all(
