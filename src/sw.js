@@ -1,4 +1,4 @@
-const cacheName = 'main-9.1.0';
+const cacheVersionName = '1.0.6';
 
 const preCacheList = [
     '/',
@@ -13,18 +13,34 @@ const preCacheList = [
 ];
 
 self.addEventListener('install', (event) => {
-    console.log(`[Service Worker] install`);
+    console.log(`[Service Worker] install ${cacheVersionName}`);
+    self.skipWaiting(); // 立即使用用该版本接管 fetch push sync 等
 
+    //
     event.waitUntil(
-        caches.open(cacheName)
-            .then(caches => caches.addAll(preCacheList))
+        caches.open(cacheVersionName)
+            .then(cache => cache.addAll(preCacheList))
     );
 
 });
 
 self.addEventListener('activate', async () => {
     console.log('[Service Worker] active');
-    self.clients.claim();
+    event.waitUntil(
+        caches.keys().then(function (cacheNames) {
+            return Promise.all(
+                cacheNames.filter(function (name) {
+                    // Return true if you want to remove this cache,
+                    // but remember that caches are shared across
+                    // the whole origin
+
+                    return name !== cacheVersionName;
+                }).map(function (cacheName) {
+                    return caches.delete(cacheName);
+                })
+            );
+        })
+    );
 });
 
 self.addEventListener('fetch', (event) => {
@@ -43,7 +59,7 @@ self.addEventListener('fetch', (event) => {
     const isNavigateMode = mode === 'navigate';
 
     event.respondWith(
-        caches.open(cacheName)
+        caches.open(cacheVersionName)
             .then(caches => caches.match(request))
             .then(response => {
                 return response ? response : fetch(request);
@@ -72,7 +88,7 @@ self.addEventListener('push', event => {
     let notificationData = event.data.json();
     const title = notificationData.title;
     // 可以发个消息通知页面
-    //util.postMessage(notificationData);
+    //clients forEach postMessage(notificationData);
     // 弹消息框
     event.waitUntil(self.registration.showNotification(title, notificationData));
 });
@@ -84,6 +100,11 @@ self.addEventListener('sync', (event) => {
             fetch('/api/app-info/sync?userId=trump.wang')
         )
     }
+});
+
+// receive postMessage from window
+self.addEventListener('message', () => {
+
 });
 
 

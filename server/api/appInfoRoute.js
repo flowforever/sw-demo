@@ -15,3 +15,5 @@ appInfoRoute.get('/', ctx => {
 appInfoRoute.get('/sync', ctx=>{
     ctx.body = 'sync success';
 });
+
+appInfoRoute.get('/random', ctx=> ctx.body = Math.random());

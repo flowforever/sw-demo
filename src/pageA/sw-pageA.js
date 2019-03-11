@@ -1,4 +1,4 @@
-const cacheName = 'pageA-2.0.0';
+const cacheName = '1.0.0';
 
 const preCacheList = [
     '/',

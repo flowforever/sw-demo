@@ -1,4 +1,6 @@
 (async () => {
+    await import('./versionConfig.js');
+
     const {appConfig: {publicKey}} = await import('./appConfig.js');
 
     if ('serviceWorker' in navigator) {
@@ -57,6 +59,17 @@
 
     navigator.serviceWorker.addEventListener('message', event => {
         //console.log('Service Worker Message', event);
+    });
+
+    let refreshing = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (refreshing) {
+            return
+        }
+        refreshing = true;
+
+        window.alert('Site Content was changed, please reload page');
+        window.location.reload();
     });
 
 })();
